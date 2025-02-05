@@ -1,0 +1,45 @@
+/* Home.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.home-section {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.home-title {
+  margin: 20px 0;
+}
+
+.home-background-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Set a max height */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.home-content {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .home-background-image {
+    max-height: 250px; /* Smaller max height for mobile */
+  }
+
+  .home-title {
+    font-size: 1.5em; /* Smaller title on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 1.2em; /* Even smaller title on very small screens */
+  }
+}
+

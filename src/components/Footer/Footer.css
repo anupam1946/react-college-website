@@ -1,0 +1,97 @@
+/* Footer.css */
+/* .footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+}
+
+.view-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-more:hover {
+    background-color: #0056b3;
+}
+
+.footer video {
+    width: 100%;
+    height: auto;
+} */
+
+/* Footer.css */
+.footer {
+    display: flex;
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    justify-content: space-around; /* Space out the columns */
+    padding: 20px;
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+}
+
+.footer-column {
+    flex: 1 1 200px; /* Allows flexibility and a minimum width */
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    color: burlywood;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    gap: 15px;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.view-more, .view-less {
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Animation for hover */
+}
+
+.view-more:hover, .view-less:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.additional-content {
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack columns vertically on small screens */
+        align-items: center; /* Center align items */
+    }
+}
+

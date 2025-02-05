@@ -1,0 +1,112 @@
+.our-courses {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.course-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-details {
+    margin-top: 10px;
+    background-color: #e6f7ff; /* Slightly different background to emphasize open details */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.course-details button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.course-details button:hover {
+    background-color: #0056b3;
+}
+
+.enrollment-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.enrollment-form input,
+.enrollment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.enrollment-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.enrollment-form button:hover {
+    background-color: #218838;
+}
+
+/* Styling for specific forms */
+.enrollment-form.science-form {
+    background-color: #e8f5e9; /* Slightly green background for Science */
+}
+
+.enrollment-form.management-form {
+    background-color: #fef9e7; /* Slightly yellow background for Management */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .our-courses {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .course-card {
+        padding: 10px;
+    }
+    
+    .enrollment-form {
+        padding: 15px;
+    }
+
+    .enrollment-form input,
+    .enrollment-form textarea {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,28 @@
+.faculty-detail {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .faculty-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .faculty-detail h1 {
+    margin: 20px 0;
+    font-size: 2rem;
+  }
+  
+  .faculty-detail h3 {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .faculty-detail p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #666;
+  }
+  

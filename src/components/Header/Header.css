@@ -1,0 +1,191 @@
+/* 
+.header {
+  background: #333;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  position: relative;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex; 
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.menu-icon {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    
+    position: absolute; 
+    top: 60px; 
+    right: 0; 
+    width: 60%; 
+    background-color: #333;
+    z-index: 10; 
+    transition: transform 0.3s ease; 
+    transform: translateX(100%);
+  }
+
+  .nav-open {
+    display: flex; 
+    transform: translateX(0);
+  }
+
+  nav ul {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  nav li {
+    margin: 10px 0; 
+  }
+
+ 
+  nav .menu-icon {
+    align-self: flex-end; 
+    margin: 10px; 
+  }
+} */
+
+.header {
+  background: #333;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+.header-content h1 {
+  margin: 0 10px; /* Add some space around the text */
+}
+
+.header .logo {
+  max-width: 50px;
+  height: auto; /* Adjust according to your logo size */
+}
+
+.nav-mob-open,
+.nav-mob-close {
+  width: 30px; /* Set a fixed width */
+  height: 30px; /* Set a fixed height */
+  cursor: pointer;
+}
+
+.nav-mob-open {
+  display: none; /* Hidden by default (visible on mobile) */
+}
+
+.nav-desktop {
+  display: flex; /* Show desktop nav by default */
+  justify-content: center; /* Center the menu items */
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  right: -350px; /* Initially hidden */
+  width: 300px; /* Adjust as necessary */
+  height: 100%;
+  background-color: #333;
+  transition: right 0.3s ease;
+  z-index: 10;
+}
+
+.nav-menu img.nav-mob-close {
+  margin: 20px; /* Space for close icon */
+  cursor: pointer;
+}
+
+.nav-menu li {
+  padding: 20px; /* Space around each menu item */
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu a:hover {
+  background-color: #555; /* Highlight on hover */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .nav-mob-open {
+    display: block; /* Show the open menu icon on mobile */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 11; /* Ensure it appears above the menu */
+  }
+
+  .nav-desktop {
+    display: none; /* Hide desktop nav on mobile */
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    width: 200px;
+    height: 500px; /* Adjust if necessary for spacing */
+  }  
+  .nav-menu li{
+    padding: 10px 20px;
+  }
+}
+
